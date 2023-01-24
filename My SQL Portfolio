@@ -1,0 +1,20 @@
+CREATE TABLE bakery (id INTEGER PRIMARY KEY, name TEXT, flavor TEXT, allergens TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO bakery VALUES (1, "Conchas", "Vanilla", "Milk", 15, 1);
+INSERT INTO bakery VALUES (2, "Conchas", "Chocolate", "Milk", 15,1);
+INSERT INTO bakery VALUES (3, "Conchas", "Strawberry", "Milk", 15,1);
+INSERT INTO bakery VALUES (4, "Cuernitos", "Vanilla", "Milk, Nuts", 7,2);
+INSERT INTO bakery VALUES (5, "Puercitos", "Cinnamon", "Eggs, Milk, Nuts", 21,2);
+INSERT INTO bakery VALUES (6, "Orejas", "Vanilla", "Eggs, Milk", 19,2);
+INSERT INTO bakery VALUES (7, "Banana Bread", "Banana", "Eggs, Milk", 3,5);
+INSERT INTO bakery VALUES (8, "Cinnamon Roll", "Cinnamon", "Eggs, Milk, Wheat", 10,5);
+INSERT INTO bakery VALUES (9, "Cake", "Marble", "Milk, Eggs", 1,15);
+INSERT INTO bakery VALUES (10, "Toast", "Honey Wheat", "Wheat", 3,2);
+INSERT INTO bakery VALUES (11, "Croissant", "Vanilla", "Milk", 15,2);
+INSERT INTO bakery VALUES (12, "Cake Pops", "Vanilla, Chocolate", "Milk, Eggs", 30,3);
+INSERT INTO bakery VALUES (13, "Chocolate Chip Cookes", "Chocolate, Peppermint", "Milk", 24,2);
+INSERT INTO bakery VALUES (14, "Sugar Cookies", "Vanilla, Sprinkles", "Milk", 12,2);
+INSERT INTO bakery VALUES (15, "Cheesecake", "Vanilla, Strawberry", "Milk", 5,15);
+SELECT * FROM bakery;
+SELECT name, price FROM bakery ORDER BY price;
+SELECT name, price FROM bakery WHERE price<5; 
+ 
